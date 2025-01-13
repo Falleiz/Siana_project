@@ -4,21 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recherche de composant</title>
-    <link rel="stylesheet" href="{% static 'technician_page/style.css' %}">
+    <title>Recherche de composant par image</title>
 </head>
 <body>
 <header>
     <h1>Recherche de composant par image</h1>
 </header>
 <main>
-    <!-- Message d'erreur -->
     {% if error %}
         <p class="error">{{ error }}</p>
     {% endif %}
-    
-    <!-- Formulaire de téléversement -->
-    <form method="POST" action="{% url 'upload_and_search' %}" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         <label for="image">Téléverser une image :</label>
         <input type="file" name="image" accept="image/*" required>

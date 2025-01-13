@@ -422,3 +422,9 @@ def delete_component_image(request, image_id):
     image.delete()
     messages.success(request, "Image supprimée avec succès.")
     return redirect('component_details', component_id=component_id)
+
+
+
+
+
+

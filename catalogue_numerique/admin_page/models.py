@@ -39,6 +39,9 @@ class ComponentImage(models.Model):
     def __str__(self):
         return f"Image associée à {self.component.name}"
 
+
+
+
 # Détails techniques d’un composant (Caractéristiques techniques)
 class Component_details_technique(models.Model):
     component = models.ForeignKey(
