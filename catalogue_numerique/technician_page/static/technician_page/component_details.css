@@ -55,6 +55,12 @@ section.modifier-section h2 {
     border: 1px solid #ddd;
 }
 
+/* Formulaires */
+form {
+    margin-bottom: 20px;
+     /* Centrer tous les boutons */
+}
+
 /* Images associées */
 .images img {
     max-width: 150px;
